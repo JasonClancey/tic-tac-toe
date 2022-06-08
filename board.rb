@@ -41,7 +41,7 @@ class Board
   end
 
   def board_filled?
-    if @positions.all? { |position| position.instance_of?(String) }
+    if @positions.all? { |position| position.instance_of?(String) } && game_over == false
       puts 'Tie game!'
       @game_over = true
     end
